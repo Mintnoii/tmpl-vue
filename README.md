@@ -10,9 +10,9 @@
 
 - 🔥 [使用新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
-- 🗂 [基于文件的路由](https://git.xmov.ai/frontend/template-vue-default/tree/master/src/pages)
+- 🗂 [基于文件的路由](https://github.com/Mintnoii/tmpl-vue/tree/main/src/pages)
 
-- 🗺 [布局系统](https://git.xmov.ai/frontend/template-vue-default/tree/master/src/layout)
+- 🗺 [布局系统](https://github.com/Mintnoii/tmpl-vue/tree/main/src/layout)
 
 - 🎨 [原子化 Windi CSS](https://cn.windicss.org/guide/)
 
@@ -21,13 +21,13 @@
 ## 开箱即用
 
 - `UI 框架：` [Ant Design Vue](https://www.antdv.com/components/overview-cn/)
-- `Icons：`  [SvgIcon](https://git.xmov.ai/frontend/template-vue-default/tree/master/src/components/SvgIcon.vue)
+- `Icons：`  [SvgIcon](https://github.com/Mintnoii/tmpl-vue/blob/main/src/components/SvgIcon.vue)
 - `CSS 实用工具：` [Windi CSS](https://cn.windicss.org/guide/)
 - `路由管理：` [Vue Router](https://github.com/vuejs/vue-router)
 - `HTTP 工具：` [Axios](https://axios-http.com/docs/intro)
 - `状态管理：` [Pinia](https://pinia.esm.dev)
-- `代码规范：` [EditorConifg、Prettier、ESLint](./.eslintrc.js)
-- `提交规范：` [husky、Commitlint 、lint-staged](./.husky/commit-msg)
+- `代码规范：` [EditorConifg、Prettier、ESLint](https://github.com/Mintnoii/tmpl-vue/blob/main/.eslintrc.js)
+- `提交规范：` [husky、Commitlint 、lint-staged](https://github.com/Mintnoii/tmpl-vue/blob/main/.husky)
 
 ### 开发建议
 
@@ -54,18 +54,14 @@
  注意：项目安装了 `SCSS` 的预处理器，但请在原子化 CSS 很难实现的场景，再考虑使用 `SCSS` 语法。
 ### 注意事项
 
- **📌 使用 `SvgIcon` 组件时，单色图标需要设计同学导出不带 `fill` 属性的 `svg` 图片才能实现自定义颜色**
+ **📌 使用 `SvgIcon` 组件时，单色图标需要使用不带 `fill` 属性的 `svg` 图片才能实现自定义颜色**
 
  - 多色、渐变、毛玻璃等 `svg` 图片暂不支持自定义颜色，直接使用设计稿原图
 
 ## 使用
 
-1. `git clone git@git.xmov.ai:frontend/template-vue-default.git my-app`
+1. `git clone git@github.com:Mintnoii/tmpl-vue.git my-app`
 2. `cd my-app`
 3. `yarn`
-4. `yarn run dev`
+4. `yarn dev`
 
-## 规划
-
-- [ ] 🍬 默认开启 响应性语法糖
-- [ ] 💫 使用 VueRequest

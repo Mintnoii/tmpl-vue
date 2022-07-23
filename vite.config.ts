@@ -17,7 +17,7 @@ export default defineConfig((env) => {
     // 服务设置
     server: {
       host: true, // host 设置为 true 才可以使用 network 的形式，以 ip 访问项目
-      port: 8081, // 端口号
+      port: 8083, // 端口号
       open: true, // 自动打开浏览器
       cors: true, // 跨域设置允许
       strictPort: true, // 如果端口已占用直接退出
