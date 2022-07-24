@@ -20,7 +20,7 @@
       </a-menu>
     </a-layout-sider>
     <a-layout>
-      <!-- <a-layout-header class="text-lg font-bold" style="background: #fff; padding: 0">
+      <!-- <a-layout-header class="font-bold text-lg" style="background: #fff; padding: 0">
         自定义头部
       </a-layout-header> -->
       <a-layout-content>
@@ -36,11 +36,10 @@ const collapsed = ref<boolean>(false)
 </script>
 <style lang="scss">
 .logo {
-  @apply h-30px m-10px font-bold  text-green-300;
+  @apply font-bold h-30px m-10px text-green-300;
 }
 
-.ant-menu-item .ant-menu-title-content{
+.ant-menu-item .ant-menu-title-content {
   @apply flex items-center;
 }
-
 </style>
