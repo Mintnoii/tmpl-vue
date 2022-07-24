@@ -58,7 +58,7 @@
     "windicss": "^3.5.6"
   },
   "husky": {
-    "hooks": {
+    "gitHooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -e $GIT_PARAMS"
     }
