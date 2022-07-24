@@ -28,7 +28,7 @@ Vite3 + Vue3 + TS 开箱即用的现代 Vue 项目开发模板
 - `HTTP 工具：` [Axios](https://axios-http.com/docs/intro)
 - `状态管理：` [Pinia](https://pinia.esm.dev)
 - `代码规范：` [EditorConifg、Prettier、ESLint](https://github.com/Mintnoii/tmpl-vue/blob/main/.eslintrc.js)
-- `提交规范：` [husky、Commitlint 、lint-staged](https://github.com/Mintnoii/tmpl-vue/blob/main/.husky)
+- `提交规范：` [husky、Commitlint、lint-staged](https://github.com/Mintnoii/tmpl-vue/blob/main/.husky)
 
 ### 开发建议
 
