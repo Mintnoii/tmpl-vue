@@ -59,14 +59,9 @@
   },
   "lint-staged": {
     "*.{ts,js,vue}": [
+      "eslint",
       "yarn lint"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -e $GIT_PARAMS"
-    }
   },
   "config": {
     "commitizen": {

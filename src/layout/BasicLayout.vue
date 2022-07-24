@@ -12,7 +12,7 @@
           </router-link>
         </a-menu-item>
         <a-menu-item key="2">
-          <svg-icon name="RiAccountPinBoxFill" color="#ff4d4f" />
+          <svg-icon name="RiAccountPinBoxFill" />
           <router-link to="/about">
             关于
           </router-link>
