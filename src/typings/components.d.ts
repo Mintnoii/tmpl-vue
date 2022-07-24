@@ -3,6 +3,8 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 import '@vue/runtime-core'
 
+export {}
+
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
@@ -17,5 +19,3 @@ declare module '@vue/runtime-core' {
     SvgIcon: typeof import('./../components/SvgIcon.vue')['default']
   }
 }
-
-export {}

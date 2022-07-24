@@ -1,22 +1,23 @@
-# Vue-Default Vue 项目的默认模板
+# Mint-Tmpl-Vue
 
+Vite3 + Vue3 + TS 开箱即用的现代 Vue 项目开发模板
 ## 特性
 
-- 📥 [组合式 Composition API 自动加载](https://github.com/antfu/unplugin-auto-import)
+- 📥 [组合式 Composition API 自动引入](https://github.com/antfu/unplugin-auto-import)
 
-- 📦 [组件自动化加载](https://github.com/antfu/unplugin-vue-components)
-
-- 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
-
-- 🔥 [使用新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
+- 📦 [ UI 组件自动化加载](https://github.com/antfu/unplugin-vue-components)
 
 - 🗂 [基于文件的路由](https://github.com/Mintnoii/tmpl-vue/tree/main/src/pages)
 
 - 🗺 [布局系统](https://github.com/Mintnoii/tmpl-vue/tree/main/src/layout)
 
+- 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
+
+- 🔥 [使用新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
+
 - 🎨 [原子化 Windi CSS](https://cn.windicss.org/guide/)
 
-- 🚀 [使用实用的 Composition API 工具合集 VueUse](https://github.com/antfu/vueuse)
+- 🚀 [实用的 VueUse 工具合集](https://github.com/antfu/vueuse)
 
 ## 开箱即用
 
