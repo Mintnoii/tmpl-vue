@@ -1,11 +1,22 @@
 {
   "tabWidth": 2,
   "useTabs": false,
-  "semi": true,
+  "semi": false,
   "singleQuote": true,
   "quoteProps": "as-needed",
   "trailingComma": "none",
   "endOfLine": "auto",
-  "printWidth": 120,
-  "parser": "typescript"
+  "printWidth": 100,
+  "parser": "typescript",
+  "arrowParens": "always",
+  "stylelintIntegration": false,
+  "tslintIntegration": false,
+  "overrides": [
+    {
+        "files": "*.json",
+        "options": {
+            "printWidth": 200
+        }
+    }
+  ]
 }

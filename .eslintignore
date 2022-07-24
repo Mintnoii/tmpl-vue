@@ -6,3 +6,4 @@ dist-ssr
 presets
 *.d.ts
 index.html
+**/*.js

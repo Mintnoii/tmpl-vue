@@ -1,10 +1,10 @@
-import { defineConfig, loadEnv } from 'vite';
-import { resolve } from 'path';
-import presets from './presets/presets';
+import { defineConfig, loadEnv } from 'vite'
+import { resolve } from 'path'
+import presets from './presets/presets'
 
 export default defineConfig((env) => {
   // env 环境变量
-  const viteEnv = loadEnv(env.mode, process.cwd());
+  const viteEnv = loadEnv(env.mode, process.cwd())
   return {
     base: viteEnv.VITE_BASE,
     plugins: [presets(env)],
@@ -35,8 +35,10 @@ export default defineConfig((env) => {
       brotliSize: false,
       // 消除打包大小超过 500kb 警告,放宽至 2000kb
       chunkSizeWarningLimit: 2000,
-      minify: 'terser',
-      // 在生产环境移除console.log
+      minify: 'terser', // 是否进行压缩,boolean | 'terser' | 'esbuild',默认使用terser
+      manifest: false, // 是否产出 maifest.json
+      sourcemap: false, // 是否产出 soucemap.json
+      // 在生产环境移除 console.log
       terserOptions: {
         compress: {
           drop_console: true,
@@ -62,5 +64,5 @@ export default defineConfig((env) => {
         }
       }
     }
-  };
-});
+  }
+})

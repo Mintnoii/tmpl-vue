@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true,
+    node: true
   },
   globals: {
     defineEmits: true,
@@ -12,14 +12,17 @@ module.exports = {
     window: true,
     defineProps: true,
     defineExpose: true,
-    withDefaults: true,
+    withDefaults: true
   },
   extends: [
-    'prettier',
+    // 'plugin:prettier/recommended',
     // unplugin-auto-import/vite 生成，在eslint中声明全局变量
     './.eslintrc-auto-import.json',
+    // "eslint:recommended",
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
+    // eslint-config-prettier 的缩写
+    'prettier'
   ],
   overrides: [
     {
@@ -28,7 +31,7 @@ module.exports = {
       parserOptions: {
         ecmaVersion: 'latest',
         parser: '@typescript-eslint/parser',
-        sourceType: 'module',
+        sourceType: 'module'
         // 暂不开启
         // ecmaFeatures: {
         //   jsx: true
@@ -38,11 +41,12 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-undef': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
-        "vue/multi-word-component-names":"off",
-        "vue/max-attributes-per-line":"off",
-      },
-    },
+        'vue/multi-word-component-names': 'off',
+        'vue/max-attributes-per-line': 'off'
+      }
+    }
   ],
-  plugins: ['vue', '@typescript-eslint', 'import'],
-  rules: {},
-};
+  // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-prettier的缩写
+  plugins: ['vue', '@typescript-eslint', 'import', 'prettier'],
+  rules: {}
+}

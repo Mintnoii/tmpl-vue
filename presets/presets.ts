@@ -1,16 +1,16 @@
-import Vue from '@vitejs/plugin-vue';
-import Pages from 'vite-plugin-pages';
-import Layouts from 'vite-plugin-vue-layouts';
-import vueSetupExtend from 'vite-plugin-vue-setup-extend';
-import vueJsx from '@vitejs/plugin-vue-jsx';
-import legacy from '@vitejs/plugin-legacy';
-import { AntDesignVueResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers';
-import AutoImport from 'unplugin-auto-import/vite';
-import Components from 'unplugin-vue-components/vite';
-import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
-import WindiCSS from 'vite-plugin-windicss';
-import { ConfigEnv } from 'vite';
-import path from 'path';
+import Vue from '@vitejs/plugin-vue'
+import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
+import vueSetupExtend from 'vite-plugin-vue-setup-extend'
+import vueJsx from '@vitejs/plugin-vue-jsx'
+import legacy from '@vitejs/plugin-legacy'
+import { AntDesignVueResolver, VueUseComponentsResolver } from 'unplugin-vue-components/resolvers'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+import WindiCSS from 'vite-plugin-windicss'
+import { ConfigEnv } from 'vite'
+import path from 'path'
 
 export default (env: ConfigEnv) => {
   return [
@@ -56,7 +56,7 @@ export default (env: ConfigEnv) => {
     createSvgIconsPlugin({
       iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
       symbolId: 'svg-icon-[name]',
-      svgoOptions: false,
-    }),
-  ];
-};
+      svgoOptions: false
+    })
+  ]
+}
