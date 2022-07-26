@@ -1,2 +1,6 @@
 @import '@/assets/styles/nprogress.scss';
-@import '@/assets/styles/dark.scss';
+// windi css 默认生成的 svg 样式为 vertical-align: middle; 
+// 会导致 antd 组件 icon 发生偏移
+svg {
+	vertical-align: initial;
+}

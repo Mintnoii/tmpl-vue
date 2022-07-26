@@ -59,7 +59,7 @@ export default defineConfig((env) => {
       preprocessorOptions: {
         // 全局引入 scss 的文件
         scss: {
-          additionalData: `@import "@/assets/styles/variables.scss";`,
+          additionalData: `@import "@/assets/styles/variables.scss";@import "@/assets/styles/index.scss";`,
           javascriptEnabled: true
         }
       }
