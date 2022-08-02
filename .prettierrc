@@ -6,17 +6,14 @@
   "quoteProps": "as-needed",
   "trailingComma": "none",
   "endOfLine": "auto",
-  "printWidth": 100,
-  "parser": "typescript",
+  "printWidth": 120,
   "arrowParens": "always",
-  "stylelintIntegration": false,
-  "tslintIntegration": false,
   "overrides": [
     {
-        "files": "*.json",
-        "options": {
-            "printWidth": 200
-        }
+      "files": "*.json",
+      "options": {
+        "printWidth": 200
+      }
     }
   ]
 }

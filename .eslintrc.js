@@ -15,15 +15,13 @@ module.exports = {
     withDefaults: true
   },
   extends: [
-    // 'plugin:prettier/recommended',
-    // unplugin-auto-import/vite 生成，在eslint中声明全局变量
     './.eslintrc-auto-import.json',
-    // "eslint:recommended",
-    'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
-    // eslint-config-prettier 的缩写
+    'plugin:vue/vue3-essential',
+    'plugin:vue/vue3-recommended',
     'prettier'
   ],
+  parser: '@typescript-eslint/parser',
   overrides: [
     {
       files: ['*.vue'],
@@ -32,10 +30,6 @@ module.exports = {
         ecmaVersion: 'latest',
         parser: '@typescript-eslint/parser',
         sourceType: 'module'
-        // 暂不开启
-        // ecmaFeatures: {
-        //   jsx: true
-        // }
       },
       rules: {
         'no-unused-vars': 'off',
@@ -46,7 +40,18 @@ module.exports = {
       }
     }
   ],
-  // eslint-plugin-vue @typescript-eslint/eslint-plugin eslint-plugin-import eslint-plugin-prettier的缩写
-  plugins: ['vue', '@typescript-eslint', 'import', 'prettier'],
-  rules: {}
+  plugins: ['vue', '@typescript-eslint', 'import'],
+  rules: {
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: {
+          max: 3
+        },
+        multiline: {
+          max: 1
+        }
+      }
+    ]
+  }
 }

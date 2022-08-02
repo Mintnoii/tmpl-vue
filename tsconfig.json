@@ -14,18 +14,13 @@
     "skipLibCheck": true,
     // 编译器去baseUrl查找模块，所有非相对模块导入都会被当做相对于 baseUrl。
     "baseUrl": ".",
-     // 非相对模块导入的路径映射配置，可以用来解决模块导入路径问题。
+    // 非相对模块导入的路径映射配置，可以用来解决模块导入路径问题。
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": ["src/*"]
     },
-    "types": [
-      "vite/client",
-      "vite-plugin-pages/client",
-      "vite-plugin-vue-layouts/client",
-    ],
-
+    "types": ["vite/client"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude":["dist", "node_modules"],
+  "exclude": ["dist", "node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

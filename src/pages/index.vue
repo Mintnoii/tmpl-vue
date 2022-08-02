@@ -1,17 +1,5 @@
 <template>
-  <div class="container">
-    <h1 class="myclass">
-      {{ title }}
-    </h1>
+  <div class="flex-col-center wh-full">
+    <div class="text-24 mb-10">前端项目（默认模板）</div>
   </div>
 </template>
-
-<script setup lang="ts" name="HomePage">
-const title = ref("Vue 项目默认模板");
-</script>
-
-<style lang="scss" scoped>
-.myclass {
-  @apply pt-40px;
-}
-</style>

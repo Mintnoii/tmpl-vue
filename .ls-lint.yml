@@ -1,0 +1,29 @@
+ls:
+  src/{components,pages,router,store,utils,typings,service}:
+    .js: kebab-case
+    .ts: kebab-case
+    .json: kebab-case
+    .vue: kebab-case
+    .tsx: kebab-case
+    .d.ts: kebab-case
+    .dir: kebab-case
+  src/hooks:
+    .js: camelCase
+    .ts: camelCase
+  src/assets/**:
+    .gif: kebab-case
+    .png: kebab-case
+    .svg: kebab-case
+    .jpg: kebab-case
+    .webp: kebab-case
+    .mp4: kebab-case
+    .mp3: kebab-case
+    .less: kebab-case
+    .sass: kebab-case
+    .scss: kebab-case
+    # 根据情况加入其它的配置项
+
+ignore:
+  - .git
+  - node_modules
+  # 可以加入其它需要忽略的文件夹和文件

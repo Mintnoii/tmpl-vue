@@ -1,6 +1,41 @@
-@import '@/assets/styles/nprogress.scss';
-// windi css 默认生成的 svg 样式为 vertical-align: middle; 
-// 会导致 antd 组件 icon 发生偏移
+// windi css 默认生成的 svg vertical-align: middle; 会导致 antd 组件 icon 发生偏移
 svg {
 	vertical-align: initial;
+}
+
+*::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    --tw-bg-opacity: 1;
+
+    min-height: 24px;
+    border: 3px solid transparent;
+    border-radius: 9999px;
+    background-clip: content-box;
+    background-clip: content-box;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    transition: background .2s ease-in-out;
+}
+
+// .dark *::-webkit-scrollbar-thumb {
+//     --tw-bg-opacity: 1;
+//     background-color: rgba(50, 50, 50, var(--tw-bg-opacity));
+// }
+
+*::-webkit-scrollbar-thumb:hover {
+    --tw-bg-opacity: 1;
+
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+//   .dark *::-webkit-scrollbar-thumb:hover {
+//     --tw-bg-opacity: 1;
+//     background-color: rgba(60, 60, 60, var(--tw-bg-opacity));
+//   }
+*::-webkit-scrollbar-corner {
+    background-color: transparent;
 }
