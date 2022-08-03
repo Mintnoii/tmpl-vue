@@ -2,21 +2,21 @@
 
 ## 特性
 
-- 📥 [组合式 Composition API 自动加载](https://github.com/antfu/unplugin-auto-import)
+- 📥 [组合式 API 自动加载](https://github.com/antfu/unplugin-auto-import)
 
 - 📦 [组件自动化加载](https://github.com/antfu/unplugin-vue-components)
 
 - 🍍 [使用 Pinia 的状态管理](https://pinia.esm.dev/)
 
-- 🔥 [使用新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
+- 🔥 [使用 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
 
-- 🎨 [原子化 Windi CSS](https://cn.windicss.org/guide/)
+- 🎨 [原子化 Unocss](https://unocss.dev/integrations/vite)
 
 - 🚀 [使用实用的 Composition API 工具合集 VueUse](https://github.com/antfu/vueuse)
 
 ## 开箱即用
 
-- `CSS 实用工具：` [Windi CSS](https://cn.windicss.org/guide/)
+- `CSS 实用工具：` [Windi CSS](https://unocss.dev/integrations/vite)
 - `路由管理：` [Vue Router](https://github.com/vuejs/vue-router)
 - `HTTP 工具：` [Axios](https://axios-http.com/docs/intro)
 - `状态管理：` [Pinia](https://pinia.esm.dev)
@@ -42,11 +42,20 @@
 
 注意：`Volar` 和 `Vetur` 同时使用会有冲突，使用 `Volar` 时要记得禁用 `Vetur`。
 
-**👍 推荐优先使用原子化 Windi CSS 实现样式开发**
+**👍 推荐优先使用原子化 CSS 实现样式开发**
 
-项目中页面与组件的样式，尽量全部用 `Windi CSS` 实现，同时推荐搭配安装 WindiCSS IntelliSense 插件，提高开发效率。
+项目中页面与组件的样式，尽量全部用 `原子化 CSS` 实现。推荐阅读 [重新构想原子化 CSS](https://antfu.me/posts/reimagine-atomic-css-zh)
 
-注意：项目安装了 `SCSS` 的预处理器，但请在原子化 CSS 很难实现的场景，再考虑使用 `SCSS` 语法。
+使用将多个规则组合成单个简写的快捷方式：
+
+比如可能经常有一些组件，需要添加 w-full、h-full 这两个属性，我们可以通过配置一个 wh-full 的快捷方式，来组合这两个规则。
+
+具体项目中已配置的快捷方式可以查看 `unocss.config.ts` 文件中的 `shortcuts`字段。
+
+同时推荐搭配安装 UnoCss 插件，该插件非常的强大，不仅可以提供输入提示，鼠标悬停还能显示编译后的 css 样式，对于自定义的 shortcuts、rules 和 colors 都能生效。
+项目中用到的原子化 css 类名，也可以通过 http://localhost:8086/\_\_unocss#/ 查看。
+
+注意：项目安装了 `SCSS` 的预处理器，但请在原子化 CSS 不易实现或是覆盖组件库样式的场景下，再考虑使用 `SCSS` 语法。
 
 ### 注意事项
 
